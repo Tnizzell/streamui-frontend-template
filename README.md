@@ -1,52 +1,69 @@
-🚀 StreamUI Starter Kit (Frontend)
-Deploy your own streaming site in 2 clicks. No backend. No login. No hassle.
+# 🚀 StreamUI Starter Kit (Frontend)
 
-This is the frontend-only version of StreamUI — a fully working streaming template where users can flip through channels, play videos from your own CDN, and customize the vibe however they want.
+**Deploy your own streaming site in 2 clicks. No backend. No login. No hassle.**
 
-🔧 What’s Inside
-✅ Channel Switcher
+This is the **frontend-only** version of StreamUI — a lightweight streaming site template you can deploy instantly. It runs 100% on the frontend. Just plug in your video links, and you're live.
 
-✅ Auto-playing video player
+---
 
-✅ Optional HLS .m3u8 and .mp4 support
+## 🔧 What's Included
 
-✅ Up next auto-loader
+- ✅ Channel Switcher
+- ✅ Auto-playing video player
+- ✅ “Up Next” autoplay with countdown
+- ✅ Supports `.mp4` and `.m3u8` streams
+- ✅ Mobile responsive UI
+- ✅ No login or backend required
 
-✅ Clean responsive layout
+---
 
-✅ No backend, no auth, no paywalls
+## ⚡ Deploy Your Own
 
-🔌 Plug in your own BunnyCDN or public video links
+> You must be logged into GitHub + Vercel.
 
-🛠 How To Deploy
-Log in to your GitHub account
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository=https://github.com/Tnizzell/streamui-frontend-template)
 
-Click this button to deploy on Vercel:
+1. Click the button
+2. Choose a project name (optional)
+3. Hit deploy — that’s it!
+
+---
+
+## 🎞 Connect Your Own Videos
+
+Open `/data/scheduleData.js` and update the URLs:
+
+```js
+url: "https://your-bunnycdn.pullzone.net/folder/video.mp4"
 
 
-That’s it. Vercel will clone the project and deploy the site for you.
+📺 Add or Edit Channels
 
-🎞 How To Add Your Own Content
-Go to /data/scheduleData.js and update the file like this:
+Go to /data/channelData.js and:
 
-js
-Copy
-Edit
-url: "https://your-bunny-cdn.pullzone.net/your-folder/your-video.mp4"
-Change the title, the time slots, or even add more channels in /data/channelData.js.
+Add new channel objects
 
-Make sure you have thumbnails in /public/thumbnails/ like:
+Set premium: true if you want it locked (logic not active in this version)
 
-Copy
-Edit
-trap.jpg
-food.jpg
-fight.jpg
-🧠 Want to Add Login or Premium Stuff?
-This template is frontend-only, made to be super simple and deployable instantly.
-If you want login, subscriptions, paywalls, or chat — that’s part of the full-stack version.
+Update thumbnails/ in the /public folder to match
+-----------------------------------------------------------------
+🧠 Heads Up
+This is the template version of StreamUI.
+It does not include:
 
-📦 Version
-v0.0.1 – Lightweight Edition
-Zero backend. Zero tracking. Zero config.
-Just drop it, click, and go live.
+Supabase login
+
+Premium paywalls
+
+Stripe payments
+
+Backend database
+
+For all that, get the full version.
+----------------------------------------------
+🧩 Version
+v0.0.1 – Gumroad Drop
+No backend. No database. No stress.
+
+
+Need help? DM @tnizzell or read the BunnyCDN docs.
